@@ -1,0 +1,132 @@
+:root {
+    --primary: #6200EE;
+    --primary2: #6200EE;
+    --bg: #f6f8fc;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, var(--primary), var(--primary2));
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.appname {
+    margin-top: 14px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 50px 20px 90px 20px;
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    padding: 34px;
+    border-radius: 16px;
+    margin-bottom: 26px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+p, li {
+    color: #374151;
+    font-size: 15.5px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.contact {
+    border-left: 5px solid var(--primary);
+}
+
+.email {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+    .header {
+        padding: 60px 20px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 30px 16px 70px 16px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+}
